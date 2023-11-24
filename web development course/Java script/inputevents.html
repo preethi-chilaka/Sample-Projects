@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <lable>username:</lable>
+    <input type="text" id="username" onblur="getUser()" />
+    <select id="car" onchange="getCar()">
+        <option>benz</option>
+        <option>bmw</option>
+        <option>audi</option>
+    </select>
+    <input type="password" id="password" onfocus="backgroundColorChange()"/>
+    <input id="p" onselect="selecto()" value="somevalue"></input>
+
+    <form onsubmit="getdetails()">
+        <lable>username:</lable>
+        <input type="text" id="email"/>
+        <lable>password:</lable>
+        <input type="password" id="pwd"/>
+        <input type="submit" value="submit"/>
+    </form>
+   
+   <script>
+        
+        function getUser(){
+            var username = document.getElementById("username")
+            console.log(username.value)
+        }
+        
+        function getCar(){
+            var car = document.getElementById("car")
+            console.log(car.value)
+        }
+        
+        function backgroundColorChange(){
+            var password = document.getElementById("password");
+            password.style.backgroundColor = "red"
+        }
+
+        function selecto(){
+            var p = document.getElementById("p")
+            alert(p.value);
+        }
+
+        function getdetails(){
+            var email = document.getElementById("emial")
+            var pwd = document.getElementById("pwd")
+            document.write("email : ", email.value)
+            document.write("password : ", pwd.value)
+        }
+    </script>
+</body>
+</html>

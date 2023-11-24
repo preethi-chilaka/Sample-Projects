@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+    <P id="para">This is a paragraph</P>
+    <h1>this is heading 1</h1>
+    <div class="d">this is div</div>
+
+    <script>
+        var p = document.getElementById("para");
+        console.log(p.innerHTML)
+
+        var h1 = document.getElementsByTagName("h1");
+        console.log(h1[0].innerHTML);
+
+        var d = document.getElementsByClassName("d");
+        console.log(d[0].innerHTML);
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>

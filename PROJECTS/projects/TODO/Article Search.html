@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTICLE SEARCH</title>
+    <style>
+        .container{
+            text-align: center;
+            margin:0 auto;
+        }
+        #inputBtn{
+            width: 50%;
+            height: 80%;
+            border: 3px solid black;
+            background-color: white;
+        }
+        #searchBtn{
+            width: 10%;
+            height: 40%;
+            margin: 10px;
+            color: white;
+            background-color: rgb(114, 4, 4);
+        }
+    </style>
+ </head>
+ <body style="background-color: rgb(107, 218, 255);">
+    <div class="container">
+        <h1>ARTICLE SEARCH</h1>
+       <input type="text" id="inputBtn" /><br>
+       <input type="button" id="searchBtn" value="Search" onclick="searchResults()">
+       <p id="result"></p>
+    </div>
+
+    <script>
+        function searchResults(){ 
+        var inputBtn = document.getElementById("inputBtn");
+        var result = document.getElementById("result")
+        result.innerHTML = "Search results are:" + inputBtn.value;
+
+        }
+    </script>
+    
+    
+ </body>
+ </html>

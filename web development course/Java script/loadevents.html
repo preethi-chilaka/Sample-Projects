@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onresize="resize()">
+    <img src="green.jpeg" onerror="imageloaderror()"/>
+    <script>
+        function onbodyload(){
+            console.log("body is loaded")
+        }
+        function resize(){
+            console.log("browser is resized")
+        }
+        function imageloaderror(){
+            console.log("image loading errror")
+        }
+    </script>    
+</body>
+</html>

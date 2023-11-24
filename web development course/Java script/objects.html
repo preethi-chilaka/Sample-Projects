@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            telugu:98,
+            hindi:99,
+            english:100,
+            maths:90,
+            Science:95,
+            social:95
+        }
+
+            console.log("telugu", obj.telugu);
+            console.log("hindi", obj.hindi);
+            console.log("english", obj.english);
+            console.log("maths", obj['maths'])
+            console.log("science", obj['science'])
+            console.log("social", obj['social'])
+
+            var person = {
+                firstname = "preethi",
+                last name = "chilaka",
+                mobile = 6309296073,
+                email = chilakapreethi96@gmail.com,
+                occupation = "software developer",
+                fullname = function(){
+                    return this.firstname+this.lastname;
+                }
+            }
+            console.log("firstname", person.preethi);
+            console.log("mobile", person[mobile]);
+
+            var fullname = person.fullname()
+            console.log(fullname);
+
+
+            
+        
+
+
+            
+           
+    </script>
+</body>
+</html>
